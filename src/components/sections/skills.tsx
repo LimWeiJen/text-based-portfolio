@@ -20,7 +20,7 @@ export function Skills() {
           {Object.entries(skills).map(([category, skillList]) => (
             <div key={category}>
               <h3 className="text-2xl font-bold font-headline mb-6 text-center">{category}</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-6">
                 {skillList.map((skill) => (
                   <Card key={skill.name} className="flex flex-col transition-transform transform hover:-translate-y-1 hover:shadow-lg">
                     <CardHeader className="flex-row items-center gap-4">
