@@ -3,9 +3,10 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/contexts/theme-provider";
 
 export const metadata: Metadata = {
-  title: "GameDev Folio",
+  title: "Lim Wei Jen",
   description: "A portfolio for a creative game developer.",
 };
 
@@ -28,8 +29,13 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased", poppins.variable)}>
-        {children}
-        <Toaster />
+        <ThemeProvider
+          defaultTheme="system"
+          storageKey="ui-theme"
+        >
+          {children}
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

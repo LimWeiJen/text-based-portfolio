@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Github, Linkedin, X as TwitterX } from "lucide-react";
+import { Mail, Github, Linkedin, X as TwitterX, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/app/data/portfolio-data";
 
@@ -15,7 +15,7 @@ export function Contact() {
           I'm currently available for freelance work and open to new opportunities. If you have a project in mind or just want to say hi, feel free to reach out.
         </p>
         <Button size="lg" asChild className="mb-10">
-          <a href="mailto:hello@gamedev.com">hello@gamedev.com</a>
+          <a href="mailto:limweijen96@gmail.com">limweijen96@gmail.com</a>
         </Button>
         <div className="flex justify-center gap-6">
           <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
@@ -28,9 +28,9 @@ export function Contact() {
               <Linkedin className="h-5 w-5" />
             </Button>
           </Link>
-          <Link href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+          <Link href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="icon" aria-label="Twitter">
-              <TwitterX className="h-5 w-5" />
+              <Instagram className="h-5 w-5" />
             </Button>
           </Link>
         </div>

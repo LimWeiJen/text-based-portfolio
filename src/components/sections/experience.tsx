@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Briefcase, Star, ExternalLink, Quote } from "lucide-react";
@@ -22,6 +23,31 @@ export function Experience() {
             A journey through my professional career, projects I've built, and what people say about my work.
           </p>
         </div>
+          <div>
+            <h3 className="text-2xl font-bold font-headline mb-8 text-center">Career Growth</h3>
+            <div className="relative max-w-3xl mx-auto pl-8">
+              <div className="absolute left-4 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
+              {jobs.map((job, index) => (
+                <div key={index} className="relative mb-12">
+                   <div className="absolute left-4 top-2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 border-4 border-background"></div>
+                  <Card className="ml-8 transition-shadow hover:shadow-md">
+                    <CardHeader>
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <CardTitle>{job.role}</CardTitle>
+                          <CardDescription>{job.company}</CardDescription>
+                        </div>
+                        <Badge variant="secondary">{job.duration}</Badge>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground">{job.description}</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          </div>
 
         <div className="space-y-20">
           <div>
@@ -56,33 +82,6 @@ export function Experience() {
               ))}
             </div>
           </div>
-
-          <div>
-            <h3 className="text-2xl font-bold font-headline mb-8 text-center">Jobs</h3>
-            <div className="relative max-w-3xl mx-auto pl-8">
-              <div className="absolute left-4 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
-              {jobs.map((job, index) => (
-                <div key={index} className="relative mb-12">
-                   <div className="absolute left-4 top-2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 border-4 border-background"></div>
-                  <Card className="ml-8 transition-shadow hover:shadow-md">
-                    <CardHeader>
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <CardTitle>{job.role}</CardTitle>
-                          <CardDescription>{job.company}</CardDescription>
-                        </div>
-                        <Badge variant="secondary">{job.duration}</Badge>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{job.description}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div>
             <h3 className="text-2xl font-bold font-headline mb-8 text-center">Reviews</h3>
             <Carousel

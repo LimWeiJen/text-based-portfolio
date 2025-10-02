@@ -1,0 +1,30 @@
+# Image Directory
+
+This directory contains all the local images for your portfolio website.
+
+## Required Images:
+
+### Profile Images:
+- **profile-picture.jpg** - Your main profile photo (used in header and about section)
+  - Recommended size: 400x400px or larger (square aspect ratio)
+  - Format: JPG, PNG, or WebP
+
+### Product Screenshots:
+- **product-1.jpg** - Screenshot of "Chronoscape: The Lost Ages" (fantasy RPG game)
+- **product-2.jpg** - Screenshot of "Paws & Puzzles" (puzzle game)
+- **product-3.jpg** - Screenshot of "Starfall: Event Horizon" (sci-fi adventure game)
+  - Recommended size: 600x400px or larger (3:2 aspect ratio)
+  - Format: JPG, PNG, or WebP
+
+### Reviewer Profile Pictures:
+- **reviewer-1.jpg** - Alex's profile picture
+- **reviewer-2.jpg** - Samantha's profile picture
+- **reviewer-3.jpg** - David's profile picture
+- **reviewer-4.jpg** - Emily's profile picture
+  - Recommended size: 200x200px or larger (square aspect ratio)
+  - Format: JPG, PNG, or WebP
+
+## Notes:
+- All images are served from the `/images/` path (e.g., `/images/profile-picture.jpg`)
+- You can delete this .gitkeep file once you add your actual images
+- The application will show broken image placeholders until you add the actual image files

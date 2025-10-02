@@ -16,6 +16,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,7 +46,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           {profilePic && (
             <Image
-              src={profilePic.imageUrl}
+              src={profilePic.imagePath}
               alt={profilePic.description}
               width={40}
               height={40}
@@ -53,7 +54,7 @@ export function Header() {
               data-ai-hint={profilePic.imageHint}
             />
           )}
-          <span className="text-xl font-bold font-headline">GameDev Folio</span>
+          <span className="text-xl font-bold font-headline">Lim Wei Jen</span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -69,6 +70,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
+          <ThemeToggle />
           <Button asChild>
             <Link href="#contact">Hire Me</Link>
           </Button>
@@ -100,11 +102,14 @@ export function Header() {
                     {link.name}
                   </Link>
                 ))}
-                <Button asChild size="lg" className="mt-4">
-                  <Link href="#contact" onClick={() => setIsSheetOpen(false)}>
-                    Hire Me
-                  </Link>
-                </Button>
+                <div className="flex items-center gap-4 mt-4">
+                  <ThemeToggle />
+                  <Button asChild size="lg" className="flex-1">
+                    <Link href="#contact" onClick={() => setIsSheetOpen(false)}>
+                      Hire Me
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </SheetContent>
           </Sheet>

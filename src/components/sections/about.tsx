@@ -22,7 +22,7 @@ export function About() {
             {profilePic && (
               <div className="relative w-48 h-48 md:w-64 md:h-64">
                 <Image
-                  src={profilePic.imageUrl}
+                  src={profilePic.imagePath}
                   alt={profilePic.description}
                   fill
                   className="rounded-full object-cover border-4 border-primary/50 shadow-lg"
@@ -34,19 +34,22 @@ export function About() {
           </div>
           <div className="w-full md:w-2/3 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline mb-6 tracking-tight">
-              Creative Game Developer & Programmer
+              Creative Software & Game Developer
             </h1>
             <p className="max-w-3xl text-lg text-muted-foreground mb-10 mx-auto md:mx-0">
-              I'm a passionate game developer with a knack for creating immersive and fun experiences. From crafting complex gameplay systems to designing beautiful user interfaces, I love bringing ideas to life with code and creativity. Let's build something amazing together.
+I love collaborating on quick projects and bringing ideas to life. With a passion for both graphics design and programming, I create visually stunning and functional websites. I bring a unique blend of creativity and technical expertise to every project.
+            </p>
+            <p className="max-w-3xl text-lg text-muted-foreground mb-10 mx-auto md:mx-0">
+I thrive on embracing new challenges and constantly pushing myself, and I am thrilled to collaborate with like-minded individuals. If you're looking for a dedicated developer who can bring your ideas to life with precision and creativity, look no further!
             </p>
             <div className="flex justify-center md:justify-start gap-4">
               <Button size="lg" asChild>
-                <Link href="#experience">My Work</Link>
+                <Link href="#contact">Hire Me</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href="/resume.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
-                  Download CV
+                  My Resume
                 </a>
               </Button>
             </div>
