@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function Experience() {
   return (
@@ -113,8 +114,12 @@ export function Experience() {
                         <CardContent className="flex-grow">
                           <p className="italic text-muted-foreground">"{review.review}"</p>
                         </CardContent>
-                        <CardFooter>
-                          <p className="font-semibold">{review.name}</p>
+                        <CardFooter className="flex items-center gap-4">
+                            <Avatar>
+                                <AvatarImage src={review.image} alt={review.name} data-ai-hint={review.imageHint} />
+                                <AvatarFallback>{review.name.charAt(0)}</AvatarFallback>
+                            </Avatar>
+                            <p className="font-semibold">{review.name}</p>
                         </CardFooter>
                       </Card>
                     </div>

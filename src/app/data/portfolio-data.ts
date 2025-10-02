@@ -83,21 +83,29 @@ export const reviews = [
         name: "Alex, Project Manager",
         review: "An absolute pleasure to work with. Their creativity and technical skill are unmatched. They delivered beyond our expectations and were a true team player.",
         rating: 5,
+        image: PlaceHolderImages.find(p => p.id === 'reviewer-1')?.imageUrl || '',
+        imageHint: PlaceHolderImages.find(p => p.id === 'reviewer-1')?.imageHint,
     },
     {
         name: "Samantha, CEO of a startup",
         review: "Hiring them was the best decision we made for our game. Their insights into game design were invaluable, and the final product is a masterpiece.",
         rating: 5,
+        image: PlaceHolderImages.find(p => p.id === 'reviewer-2')?.imageUrl || '',
+        imageHint: PlaceHolderImages.find(p => p.id === 'reviewer-2')?.imageHint,
     },
     {
         name: "David, Lead Artist",
         review: "Their ability to bring artistic concepts to life through code is magical. They understand the vision and execute it flawlessly. Highly recommended.",
         rating: 5,
+        image: PlaceHolderImages.find(p => p.id === 'reviewer-3')?.imageUrl || '',
+        imageHint: PlaceHolderImages.find(p => p.id === 'reviewer-3')?.imageHint,
     },
     {
         name: "Emily, Indie Dev Collaborator",
         review: "A brilliant programmer and an even better person. They are reliable, communicative, and always willing to go the extra mile to make the game perfect.",
         rating: 5,
+        image: PlaceHolderImages.find(p => p.id === 'reviewer-4')?.imageUrl || '',
+        imageHint: PlaceHolderImages.find(p => p.id === 'reviewer-4')?.imageHint,
     },
 ];
 
