@@ -7,7 +7,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function Experience() {
@@ -24,14 +23,9 @@ export function Experience() {
           </p>
         </div>
 
-        <Tabs defaultValue="products" className="w-full">
-          <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 mb-10">
-            <TabsTrigger value="products">Products</TabsTrigger>
-            <TabsTrigger value="jobs">Jobs</TabsTrigger>
-            <TabsTrigger value="reviews">Reviews</TabsTrigger>
-          </TabsList>
-          
-          <TabsContent value="products">
+        <div className="space-y-20">
+          <div>
+            <h3 className="text-2xl font-bold font-headline mb-8 text-center">Products</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product) => (
                 <Card key={product.title} className="flex flex-col overflow-hidden group transition-shadow hover:shadow-xl">
@@ -61,9 +55,10 @@ export function Experience() {
                 </Card>
               ))}
             </div>
-          </TabsContent>
+          </div>
 
-          <TabsContent value="jobs">
+          <div>
+            <h3 className="text-2xl font-bold font-headline mb-8 text-center">Jobs</h3>
             <div className="relative max-w-3xl mx-auto pl-8">
               <div className="absolute left-4 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
               {jobs.map((job, index) => (
@@ -86,9 +81,10 @@ export function Experience() {
                 </div>
               ))}
             </div>
-          </TabsContent>
+          </div>
 
-          <TabsContent value="reviews">
+          <div>
+            <h3 className="text-2xl font-bold font-headline mb-8 text-center">Reviews</h3>
             <Carousel
               opts={{
                 align: "start",
@@ -129,8 +125,8 @@ export function Experience() {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
-          </TabsContent>
-        </Tabs>
+          </div>
+        </div>
       </div>
     </section>
   );
