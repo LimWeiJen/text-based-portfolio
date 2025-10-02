@@ -97,7 +97,7 @@ export const products = [
 export const reviews = [
     {
         name: "James, hardgaming.tech",
-        review: "An absolute pleasure to work with. Their creativity and technical skill are unmatched. They delivered beyond our expectations and were a true team player.",
+        review: "Lim did an amazing job creating a game that my users can play while waiting for their games to download and install. Its SO GOOD actually, they have been wanting to play IT instead of the games they just bought. Well worth the money and ill be getting Lim to further develop it.",
         rating: 5,
         image: PlaceHolderImages.find(p => p.id === 'reviewer-1')?.imagePath || '',
         imageHint: PlaceHolderImages.find(p => p.id === 'reviewer-1')?.imageHint,
