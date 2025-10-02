@@ -16,11 +16,11 @@ export function Skills() {
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="grid md:grid-cols-2 gap-12">
           {Object.entries(skills).map(([category, skillList]) => (
             <div key={category}>
               <h3 className="text-2xl font-bold font-headline mb-6 text-center">{category}</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {skillList.map((skill) => (
                   <Card key={skill.name} className="flex flex-col transition-transform transform hover:-translate-y-1 hover:shadow-lg">
                     <CardHeader className="flex-row items-center gap-4">
