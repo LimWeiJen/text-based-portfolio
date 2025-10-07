@@ -54,7 +54,7 @@ export const jobs = [
         company: "Multiple High Schools in Malaysia",
         role: "Workshop Speaker",
         duration: "15/5/2024 - 11/6/2025",
-        description: "I was invited as a speaker for multiple workshops in multiple high schools. I conducted workshops on Python programming and Mathematics for high school students.",
+        description: "I was invited as a speaker for multiple workshops in multiple high schools. I conducted workshops on Python programming, Parliamentary debate and Mathematics for high school students.",
     },
     {
         company: "Chumbaka Inc.",
