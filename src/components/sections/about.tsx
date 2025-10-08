@@ -37,7 +37,7 @@ export function About() {
               Creative Software & Game Developer
             </h1>
             <p className="max-w-3xl text-lg text-muted-foreground mb-10 mx-auto md:mx-0">
-I love collaborating on quick projects and bringing ideas to life. With a passion for both graphics design and programming, I create visually stunning and functional websites. I bring a unique blend of creativity and technical expertise to every project.
+I love collaborating on quick projects and bringing ideas to life. With a passion for game development, graphics design, robotics, and programming, I create visually stunning games and fully functional websites. I bring a unique blend of creativity and technical expertise to every project.
             </p>
             <p className="max-w-3xl text-lg text-muted-foreground mb-10 mx-auto md:mx-0">
 I thrive on embracing new challenges and constantly pushing myself, and I am thrilled to collaborate with like-minded individuals. If you're looking for a dedicated developer who can bring your ideas to life with precision and creativity, look no further!
