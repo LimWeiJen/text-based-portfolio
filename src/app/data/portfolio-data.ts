@@ -79,6 +79,13 @@ export const products = [
         link: "https://expenseflow.me/",
     },
     {
+        title: "REC UM Website",
+        description: "I led the design and development of the Robotics Engineering Community (REC UM) website at the University of Malaya.",
+        image: PlaceHolderImages.find(p => p.id === 'product-4')?.imagePath || '',
+        imageHint: PlaceHolderImages.find(p => p.id === 'product-4')?.imageHint,
+        link: "https://rec-um.vercel.app/",
+    },
+    {
         title: "Generation 142",
         description: "A story-based, single-player, Metroidvania game where you play as a person wandering in an unknown, fantasy world. Or are you?",
         image: PlaceHolderImages.find(p => p.id === 'product-2')?.imagePath || '',

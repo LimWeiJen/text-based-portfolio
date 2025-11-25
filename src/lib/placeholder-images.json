@@ -25,6 +25,12 @@
       "imageHint": "sci-fi adventure"
     },
     {
+      "id": "product-4",
+      "description": "REC UM Website",
+      "imagePath": "/images/rec um.png",
+      "imageHint": "sci-fi adventure"
+    },
+    {
       "id": "reviewer-1",
       "description": "James",
       "imagePath": "/images/james.png",
