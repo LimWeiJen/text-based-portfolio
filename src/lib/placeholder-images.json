@@ -8,9 +8,9 @@
     },
     {
       "id": "product-1",
-      "description": "Expense Flow",
-      "imagePath": "/images/expense flow.png",
-      "imageHint": "fantasy rpg"
+      "description": "Elixir",
+      "imagePath": "/images/elixir.png",
+      "imageHint": "productivity dashboard"
     },
     {
       "id": "product-2",
@@ -26,9 +26,9 @@
     },
     {
       "id": "product-4",
-      "description": "REC UM Website",
-      "imagePath": "/images/rec um.png",
-      "imageHint": "sci-fi adventure"
+      "description": "3D Magnetic Field Simulator",
+      "imagePath": "/images/3d magnetic field.png",
+      "imageHint": "3d magnetic field simulator"
     },
     {
       "id": "reviewer-1",

@@ -1,4 +1,4 @@
-import { Code, Database, Gamepad2, Wrench, Component, Bot, Brush, PenTool, type LucideIcon, Music, PaintBucket, Flame, Zap, Square, Calculator, Combine, FlaskConical, Plug, Circle, Shapes } from "lucide-react";
+import { Code, Database, Gamepad2, Wrench, Component, Bot, Brush, PenTool, type LucideIcon, Music, PaintBucket, Flame, Zap, Square, Calculator, Combine, FlaskConical, Plug, Circle, Shapes, Paintbrush } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export const navLinks = [
@@ -37,17 +37,30 @@ export const skills: Record<string, { icon: LucideIcon; name: string; descriptio
     { icon: Code, name: "C++", description: "For building IOT and performance critical applications." },
   ],
   "Tools": [
+    { icon: Bot, name: "Antigravity", description: "My go-to code editor for building applications." },
     { icon: Wrench, name: "Git", description: "Version control for projects of all sizes." },
-    { icon: Square, name: "Figma", description: "For creating UI mockups and prototypes." },
-    { icon: Calculator, name: "ManimCE", description: "For creating mathematical animations." },
+    { icon: Paintbrush, name: "Figma", description: "For creating UI mockups and prototypes." },
+    { icon: Square, name: "Adobe Premiere Pro", description: "For video editing and post-production." },
   ],
 };
 
 export const jobs = [
     {
+        company: "Robotics Engineering Community of University Malaya (REC UM)",
+        role: "HOD of Tournament (Robotics)",
+        duration: "12/10/2025 - Present",
+        description: "I organize and manage large-scale university robotics workshops and national competitions. I also participate in specialized robotics research bridging hardware integration and programming.",
+    },    
+    {
+        company: "University Malaya 2nd College/University Malaya Chess Club",
+        role: "HOD of Tournament (Chess)",
+        duration: "25/10/2025 - Present",
+        description: "I coordinate a range of major chess competitions, including the internationally recognized GACC 27th tournament.",
+    },
+    {
         company: "Fiverr Co.",
         role: "Freelancer",
-        duration: "1/4/2024 - Present",
+        duration: "1/4/2024 - 12/10/2025",
         description: "I provide multiple freelance services like  website design and digital graphics design, but I'm mostly engaged in game development work.",
     },
     {
@@ -72,18 +85,18 @@ export const jobs = [
 
 export const products = [
     {
-        title: "Expense Flow",
-        description: "A simple and modern expense tracker for everyone.",
+        title: "Elixir",
+        description: "An all-in-one personal productivity dashboard designed to streamline task management and scheduling.",
         image: PlaceHolderImages.find(p => p.id === 'product-1')?.imagePath || '',
         imageHint: PlaceHolderImages.find(p => p.id === 'product-1')?.imageHint,
-        link: "https://expenseflow.me/",
+        link: "https://elixir-pink-six.vercel.app/",
     },
     {
-        title: "REC UM Website",
-        description: "I led the design and development of the Robotics Engineering Community (REC UM) website at the University of Malaya.",
+        title: "3D Magnetic Field Simulator",
+        description: "A 3D magnetic field simulation tool utilizing the Godot game engine.",
         image: PlaceHolderImages.find(p => p.id === 'product-4')?.imagePath || '',
         imageHint: PlaceHolderImages.find(p => p.id === 'product-4')?.imageHint,
-        link: "https://rec-um.vercel.app/",
+        link: "https://technotitanskmkj.itch.io/magnatex-01",
     },
     {
         title: "Generation 142",
