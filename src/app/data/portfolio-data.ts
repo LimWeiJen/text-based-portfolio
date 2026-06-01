@@ -46,40 +46,46 @@ export const skills: Record<string, { icon: LucideIcon; name: string; descriptio
 
 export const jobs = [
     {
-        company: "Robotics Engineering Community of University Malaya (REC UM)",
-        role: "HOD of Tournament (Robotics)",
-        duration: "12/10/2025 - Present",
-        description: "I organize and manage large-scale university robotics workshops and national competitions. I also participate in specialized robotics research bridging hardware integration and programming.",
-    },    
-    {
         company: "University Malaya 2nd College/University Malaya Chess Club",
-        role: "HOD of Tournament (Chess)",
-        duration: "25/10/2025 - Present",
-        description: "I coordinate a range of major chess competitions, including the internationally recognized GACC 27th tournament.",
+        role: "Head of Tournament (GACC)",
+        duration: "25/10/2025 - 1/6/2026",
+        description: "I led a dedicated tournament team for one of Malaysia's largest chess championships (GACC 27th), which consists of 1100+ participants across 13 different countries.",
+        image: PlaceHolderImages.find(p => p.id === 'experience-6')?.imagePath || '',
     },
+    {
+        company: "Robotics Engineering Community of University Malaya (REC UM)",
+        role: "Head Of Technical and Competition (ARC)",
+        duration: "12/10/2025 - 12/4/2026",
+        description: "I engineered and executed a national-scale robotics tournament (ARC 2026) from scratch, uniting over 120 competitors from Malaysia's top universities.",
+        image: PlaceHolderImages.find(p => p.id === 'experience-5')?.imagePath || '',
+    },    
     {
         company: "Fiverr Co.",
         role: "Freelancer",
         duration: "1/4/2024 - 12/10/2025",
         description: "I provide multiple freelance services like  website design and digital graphics design, but I'm mostly engaged in game development work.",
+        image: PlaceHolderImages.find(p => p.id === 'experience-4')?.imagePath || '',
     },
     {
         company: "Multiple High Schools in Malaysia",
         role: "Workshop Speaker",
         duration: "15/5/2024 - 11/6/2025",
         description: "I was invited as a speaker for multiple workshops in multiple high schools. I conducted workshops on Python programming, Parliamentary debate and Mathematics for high school students.",
+        image: PlaceHolderImages.find(p => p.id === 'experience-3')?.imagePath || '',
     },
     {
         company: "Chumbaka Inc.",
         role: "Software Intern",
         duration: "21/3/2024 - 30/4/2024",
         description: "I became a software intern at Chumbaka Inc. and I help in creating systems for workforce organization and hosting tech workshops for high school students.",
+        image: PlaceHolderImages.find(p => p.id === 'experience-2')?.imagePath || '',
     },
     {
         company: "ASEAN Foundation",
         role: "ASEAN Data Science Master Trainer",
         duration: "15/3/2024 - 10/5/2024",
         description: "I was in charge of giving assistance to teach high school students about Data Science for the Data Science Exploration Program initiated by ASEAN foundation. ",
+        image: PlaceHolderImages.find(p => p.id === 'experience-1')?.imagePath || '',
     },
 ];
 

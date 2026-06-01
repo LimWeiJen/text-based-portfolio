@@ -65,6 +65,42 @@
       "description": "E",
       "imagePath": "/images/e.jpg",
       "imageHint": "female headshot"
+    },
+    {
+      "id": "experience-1",
+      "description": "ASEAN data science master trainer",
+      "imagePath": "/images/asean foundation.png",
+      "imageHint": "asean foundation"
+    },
+    {
+      "id": "experience-2",
+      "description": "Chumbaka",
+      "imagePath": "/images/chumbaka.png",
+      "imageHint": "chumbaka"
+    },
+    {
+      "id": "experience-3",
+      "description": "Workshop Speaker",
+      "imagePath": "/images/workshop.jpg",
+      "imageHint": "workshop"
+    },
+    {
+      "id": "experience-4",
+      "description": "Freelancer",
+      "imagePath": "/images/fiverr.webp",
+      "imageHint": "fiverr"
+    },
+    {
+      "id": "experience-5",
+      "description": "ARC",
+      "imagePath": "/images/IMG_6996.jpg",
+      "imageHint": "ARC"
+    },
+    {
+      "id": "experience-6",
+      "description": "GACC",
+      "imagePath": "/images/IMG_4819.jpg",
+      "imageHint": "GACC"
     }
   ]
 }

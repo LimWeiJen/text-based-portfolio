@@ -12,7 +12,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20 md:py-28 scroll-mt-20">
+    <section id="experience" className="py-20 md:py-28 scroll-mt-20 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4 flex items-center justify-center gap-2">
@@ -30,19 +30,26 @@ export function Experience() {
               {jobs.map((job, index) => (
                 <div key={index} className="relative mb-12">
                    <div className="absolute left-4 top-2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 border-4 border-background"></div>
-                  <Card className="ml-8 transition-shadow hover:shadow-md">
-                    <CardHeader>
-                      <div className="flex justify-between items-start">
+                  <Card className="ml-8 transition-shadow hover:shadow-md flex flex-col md:flex-row overflow-hidden">
+                    <div className="flex-1 flex flex-col">
+                      <CardHeader className="p-5 pb-2">
                         <div>
-                          <CardTitle>{job.role}</CardTitle>
+                          <CardTitle className="mb-1 text-lg">{job.role}</CardTitle>
                           <CardDescription>{job.company}</CardDescription>
                         </div>
-                        <Badge variant="secondary">{job.duration}</Badge>
+                      </CardHeader>
+                      <CardContent className="p-5 pt-0 flex-1 flex flex-col justify-center">
+                        <p className="text-sm text-muted-foreground">{job.description}</p>
+                      </CardContent>
+                      <CardFooter className="p-5 pt-0 mt-auto">
+                        <Badge variant="secondary" className="font-normal text-xs">{job.duration}</Badge>
+                      </CardFooter>
+                    </div>
+                    {('image' in job && job.image) && (
+                      <div className="w-full md:w-56 lg:w-64 min-h-[160px] md:min-h-full relative flex-shrink-0 bg-muted/20 p-4">
+                        <Image src={job.image as string} alt={job.company} fill className="object-contain hover:scale-105 transition-transform duration-300 p-4 rounded-3xl" />
                       </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{job.description}</p>
-                    </CardContent>
+                    )}
                   </Card>
                 </div>
               ))}
@@ -52,7 +59,7 @@ export function Experience() {
         <div className="space-y-20">
           <div>
             <h3 className="text-2xl font-bold font-headline mb-8 text-center">Products</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {products.map((product) => (
                 <Card key={product.title} className="flex flex-col overflow-hidden group transition-shadow hover:shadow-xl">
                   <div className="overflow-hidden">

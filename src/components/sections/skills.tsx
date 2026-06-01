@@ -16,7 +16,7 @@ export function Skills() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {Object.entries(skills).map(([category, skillList]) => (
             <div key={category}>
               <h3 className="text-2xl font-bold font-headline mb-6 text-center">{category}</h3>
